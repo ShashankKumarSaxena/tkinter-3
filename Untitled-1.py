@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #-*-coding:utf-8-*-
-from Tkinter import *
+# from Tkinter import * -----> It's not working now change it
+from tkinter import *
 import random
 import threading
 class Uygulama(object):
@@ -13,7 +14,8 @@ class Uygulama(object):
     def kodlar(self):
         for i in range(1):
             pencere.after(5000, self.kodlar)
-            print "1"
+#             print "1" ----> its not working now
+              print("1")
 
     def araclar(self):
         self.etiket = Label(text="Sayı üretmek için düğmeye basınız!",
